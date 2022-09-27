@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		842FE99728E330C70082F4D2 /* unsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		842FE99728E330C70082F4D2 /* Unsplash D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unsplash D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		842FE99A28E330C70082F4D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		842FE9A328E330C80082F4D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842FE9A628E330C80082F4D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -24,6 +24,8 @@
 		842FE9B028E331080082F4D2 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		842FE9B228E331240082F4D2 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		842FE9B428E331430082F4D2 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		842FE9BD28E3374F0082F4D2 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		842FE9BE28E337570082F4D2 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 		842FE99828E330C70082F4D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				842FE99728E330C70082F4D2 /* unsplash.app */,
+				842FE99728E330C70082F4D2 /* Unsplash D.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +58,7 @@
 		842FE99928E330C70082F4D2 /* unsplash */ = {
 			isa = PBXGroup;
 			children = (
+				842FE9BC28E337380082F4D2 /* New Group */,
 				842FE99A28E330C70082F4D2 /* AppDelegate.swift */,
 				842FE9B728E3318A0082F4D2 /* Models */,
 				842FE9B628E331730082F4D2 /* Modules */,
@@ -107,6 +110,15 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		842FE9BC28E337380082F4D2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				842FE9BD28E3374F0082F4D2 /* Debug.xcconfig */,
+				842FE9BE28E337570082F4D2 /* Release.xcconfig */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,7 +136,7 @@
 			);
 			name = unsplash;
 			productName = unsplash;
-			productReference = 842FE99728E330C70082F4D2 /* unsplash.app */;
+			productReference = 842FE99728E330C70082F4D2 /* Unsplash D.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -314,12 +326,11 @@
 		};
 		842FE9AC28E330C80082F4D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 842FE9BD28E3374F0082F4D2 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FAJTRUZ6J9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "unsplash/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,8 +344,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.icapps.unsplash;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,12 +352,11 @@
 		};
 		842FE9AD28E330C80082F4D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 842FE9BE28E337570082F4D2 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FAJTRUZ6J9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "unsplash/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -362,8 +370,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.icapps.unsplash;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

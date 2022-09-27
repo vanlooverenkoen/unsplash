@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "c3b66554-b61a-4186-a4ad-34bef1a6873d",
+		"name": "Unsplash",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2056103"
+	},
+	"item": [
+		{
+			"name": "Random",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Client-ID {{Cllient-ID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.unsplash.com/search/photos?query=Antwerp",
+					"protocol": "https",
+					"host": [
+						"api",
+						"unsplash",
+						"com"
+					],
+					"path": [
+						"search",
+						"photos"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "Antwerp"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Collections",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Client-ID {{Cllient-ID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.unsplash.com/collections",
+					"protocol": "https",
+					"host": [
+						"api",
+						"unsplash",
+						"com"
+					],
+					"path": [
+						"collections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Collection detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Client-ID {{Cllient-ID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.unsplash.com/collections/8240068",
+					"protocol": "https",
+					"host": [
+						"api",
+						"unsplash",
+						"com"
+					],
+					"path": [
+						"collections",
+						"8240068"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Collection photos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Client-ID {{Cllient-ID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.unsplash.com/collections/8240068/photos",
+					"protocol": "https",
+					"host": [
+						"api",
+						"unsplash",
+						"com"
+					],
+					"path": [
+						"collections",
+						"8240068",
+						"photos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Client-ID {{Cllient-ID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.unsplash.com/search/photos?query=Antwerp",
+					"protocol": "https",
+					"host": [
+						"api",
+						"unsplash",
+						"com"
+					],
+					"path": [
+						"search",
+						"photos"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "Antwerp"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Client-ID {{Cllient-ID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.unsplash.com/users/maureen_dw",
+					"protocol": "https",
+					"host": [
+						"api",
+						"unsplash",
+						"com"
+					],
+					"path": [
+						"users",
+						"maureen_dw"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Cllient-ID",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

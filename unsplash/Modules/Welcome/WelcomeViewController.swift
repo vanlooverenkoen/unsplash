@@ -14,4 +14,10 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func didTapWelcomeButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Collection", bundle: nil)
+        guard let initialVC = storyboard.instantiateInitialViewController() else { return }
+        navigationController?.pushViewController(initialVC, animated: true)
+    }
 }

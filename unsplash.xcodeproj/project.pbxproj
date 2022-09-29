@@ -13,6 +13,8 @@
 		842FE9B128E331080082F4D2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842FE9B028E331080082F4D2 /* WelcomeViewController.swift */; };
 		842FE9B328E331240082F4D2 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842FE9B228E331240082F4D2 /* WelcomeViewModel.swift */; };
 		842FE9B528E331430082F4D2 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842FE9B428E331430082F4D2 /* Welcome.storyboard */; };
+		8462D79B28E5894000B2CEB4 /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8462D79A28E5894000B2CEB4 /* Collection.storyboard */; };
+		8462D79D28E58CCA00B2CEB4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462D79C28E58CCA00B2CEB4 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		842FE9B428E331430082F4D2 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		842FE9BD28E3374F0082F4D2 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		842FE9BE28E337570082F4D2 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		8462D79828E57F1300B2CEB4 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		8462D79A28E5894000B2CEB4 /* Collection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
+		8462D79C28E58CCA00B2CEB4 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +63,7 @@
 		842FE99928E330C70082F4D2 /* unsplash */ = {
 			isa = PBXGroup;
 			children = (
-				842FE9BC28E337380082F4D2 /* New Group */,
+				842FE9BC28E337380082F4D2 /* Configurations */,
 				842FE99A28E330C70082F4D2 /* AppDelegate.swift */,
 				842FE9B728E3318A0082F4D2 /* Models */,
 				842FE9B628E331730082F4D2 /* Modules */,
@@ -91,6 +96,7 @@
 		842FE9B628E331730082F4D2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8462D79928E588DC00B2CEB4 /* Collection */,
 				842FE9AF28E330FB0082F4D2 /* Welcome */,
 			);
 			path = Modules;
@@ -110,13 +116,23 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		842FE9BC28E337380082F4D2 /* New Group */ = {
+		842FE9BC28E337380082F4D2 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
 				842FE9BD28E3374F0082F4D2 /* Debug.xcconfig */,
 				842FE9BE28E337570082F4D2 /* Release.xcconfig */,
+				8462D79828E57F1300B2CEB4 /* Shared.xcconfig */,
 			);
-			path = "New Group";
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		8462D79928E588DC00B2CEB4 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				8462D79A28E5894000B2CEB4 /* Collection.storyboard */,
+				8462D79C28E58CCA00B2CEB4 /* CollectionViewController.swift */,
+			);
+			path = Collection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8462D79B28E5894000B2CEB4 /* Collection.storyboard in Resources */,
 				842FE9A728E330C80082F4D2 /* LaunchScreen.storyboard in Resources */,
 				842FE9A428E330C80082F4D2 /* Assets.xcassets in Resources */,
 				842FE9B528E331430082F4D2 /* Welcome.storyboard in Resources */,
@@ -190,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8462D79D28E58CCA00B2CEB4 /* CollectionViewController.swift in Sources */,
 				842FE99B28E330C70082F4D2 /* AppDelegate.swift in Sources */,
 				842FE9B328E331240082F4D2 /* WelcomeViewModel.swift in Sources */,
 				842FE9B128E331080082F4D2 /* WelcomeViewController.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  Release.xcconfig
+//  Debug.xcconfig
 //  unsplash
 //
 //  Created by Hannes Van den Berghe on 27/09/2022.
@@ -7,7 +7,9 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
-PRODUCT_NAME = Unsplash
-PRODUCT_BUNDLE_IDENTIFIER = com.icapps.unsplash
-DEVELOPMENT_TEAM = FAJTRUZ6J9
 
+#include "./Shared.xcconfig"
+
+PRODUCT_NAME = Unsplash D
+PRODUCT_BUNDLE_IDENTIFIER = com.icapps.unsplash.debug
+DEVELOPMENT_TEAM = FAJTRUZ6J9

@@ -16,7 +16,7 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func didTapWelcomeButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Collection", bundle: nil)
+        let storyboard = UIStoryboard(name: "CollectionTableView", bundle: nil)
         guard let initialVC = storyboard.instantiateInitialViewController() else { return }
         navigationController?.pushViewController(initialVC, animated: true)
     }
